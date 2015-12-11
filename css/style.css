@@ -1,0 +1,66 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	height: 100vh;
+}
+
+#pageTitle{
+	font-family: Pacifico;
+	position: fixed;
+	top: 15.5%;
+	left: 5%;
+	width: 19%;
+}
+
+input {
+	position: relative;
+	left: 20px;
+}
+
+#search {
+	position: fixed;
+	left: 5%;
+	top: 21.15%;
+	height: 30px;
+	width: 19%;
+	font-size: 15px;
+}
+
+#list-view {
+	position: fixed;
+	height: 25%;
+	overflow: auto;
+	top: 25%;
+	left: 5%;
+	width: 19%;
+	background-color: rgba(255,255,255,0.6);
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+.row {
+	width: 100%;
+}
+
+.col-md-3 {
+	width: 25%;
+	height: 100%;
+}
+
+.col-md-9 {
+	width: 75%;
+	height: 100%;
+}
