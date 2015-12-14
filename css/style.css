@@ -13,7 +13,7 @@ body {
 }
 
 #map {
-	height: 100vh;
+	height: 100%;
 }
 
 #pageTitle{
@@ -56,18 +56,4 @@ input {
 	top: 350px;
 	left: 5%;
 	width: 20%;
-}
-
-.row {
-	width: 100%;
-}
-
-.col-md-3 {
-	width: 25%;
-	height: 100%;
-}
-
-.col-md-9 {
-	width: 75%;
-	height: 100%;
 }
