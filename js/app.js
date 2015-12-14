@@ -60,6 +60,7 @@ function initMap() {
 ko.applyBindings(new ViewModel());
 }
 
+
 // Alert the user if google maps isn't working
 function googleError() {
 	"use strict";
