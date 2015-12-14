@@ -16,12 +16,13 @@ body {
 	height: 100%;
 }
 
-#pageTitle{
-	font-family: Pacifico;
+#pageTitle {
+	font-family: 'Arbutus', cursive;
+	font-size: 5px;
 	position: fixed;
-	top: 15.5%;
-	left: 5%;
-	width: 19%;
+	top: 15%;
+	left: 2%;
+	width: 30%;
 }
 
 input {
