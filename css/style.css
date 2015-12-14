@@ -51,6 +51,13 @@ input {
 	font-size: 1.1em;
 }
 
+#error {
+	position: fixed;
+	top: 350px;
+	left: 5%;
+	width: 20%;
+}
+
 .row {
 	width: 100%;
 }

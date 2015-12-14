@@ -68,8 +68,7 @@ function googleError() {
 
 
 // Place constructor
-// Credit https://discussions.udacity.com/t/having-trouble-accessing-data-outside-an-ajax-request/39072/10
-var Place = function (data) {
+var Place = function(data) {
 	"use strict";
 	this.name = ko.observable(data.name);
 	this.lat = ko.observable(data.lat);
@@ -121,13 +120,13 @@ var ViewModel = function() {
 		$.ajax({
 			url: 'https://api.foursquare.com/v2/venues/search' + placeItem.id() + '?client_id=OS1S4RTHIBE0UB0IZXWOMTNBTKR0OORIGMBHTKOMMLG5DVSY&client_secret=KVDZNXLVF2HSZCWLRXOA0SZ4HCYIW2NCBTYATX2ZYYHRHShFA&v=20130815&ll=',
 			dataType: "json",
+
 			success: function(data) {
 				var result = data.response.venue;
 				console.dir(placeItem.name());
 				console.dir(result);
 				placeItem.name(result.name);
 
-				// placeItem.name(result.name);
 				var contact = result.hasOwnProperty('contact') ? result.contact : '';
 				if (contact.hasOwnProperty('formattedPhone')) {
 				    placeItem.phone(contact.formattedPhone || '');
@@ -172,12 +171,12 @@ var ViewModel = function() {
 
 		//Add infowindows
 		google.maps.event.addListener(marker, 'click', function () {
-		infowindow.open(map, this);
-		toggleBounce();
-		setTimeout(toggleBounce, 500);
+			infowindow.open(map, this);
+			toggleBounce();
+			setTimeout(toggleBounce, 500);
 
 		//getFoursquare();
-		infowindow.setContent ('<h4>' + placeItem.name() + '</h4><img src="' + placeItem.photoPrefix() + '110x110' + placeItem.photoSuffix() + '" alt="Image Location"><p>Information from Foursquare:</p><p>' + placeItem.phone() + '</p><p>' + placeItem.address() + '</p><p>' + placeItem.description() + '</p><p>Rating: '+ placeItem.rating() + '</p><p><a href=' + placeItem.url() + '>' + placeItem.url() + '</a></p><p><a target="_blank" href=' + placeItem.canonicalUrl() + '>Foursquare Page</a></p><p><a target="_blank" href=https://www.google.com/maps/dir/Current+Location/' + placeItem.lat() + ',' + placeItem.lng() + '>Directions</a></p>')
+			infowindow.setContent('<h4>' + placeItem.name() + '</h4><img src="' + placeItem.photoPrefix() + '110x110' + placeItem.photoSuffix() + '" alt="Image Location"><p>Information from Foursquare:</p><p>' + placeItem.phone() + '</p><p>' + placeItem.address() + '</p><p>' + placeItem.description() + '</p><p>Rating: '+ placeItem.rating() + '</p><p><a href=' + placeItem.url() + '>' + placeItem.url() + '</a></p><p><a target="_blank" href=' + placeItem.canonicalUrl() + '>Foursquare Page</a></p><p><a target="_blank" href=https://www.google.com/maps/dir/Current+Location/' + placeItem.lat() + ',' + placeItem.lng() + '>Directions</a></p>')
 		});
 	});
 
