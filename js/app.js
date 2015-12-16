@@ -63,7 +63,11 @@ function initMap() {
 	"use strict";
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 44.47125, lng: -73.2125},
-		zoom: 14
+		zoom: 14,
+		mapTypeControl: true,
+		mapTypeControlOptions: {
+			position: google.maps.ControlPosition.LEFT_BOTTOM
+		}
 	});
 
 	google.maps.event.addDomListener(window, "resize", function() {

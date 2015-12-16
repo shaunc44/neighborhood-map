@@ -15,16 +15,15 @@ body,
 
 body {
 	position: relative;
-	font-size: 14px;
 }
 
 #pageTitle {
 	font-family: 'Arbutus', cursive;
-	font-size: 5px;
+	font-weight: 200;
 	position: fixed;
-	top: 15%;
+	top: 50px;
 	left: 2%;
-	width: 30%;
+	width: 400px;
 }
 
 input {
@@ -45,7 +44,7 @@ input {
 	position: fixed;
 	height: 25%;
 	overflow: auto;
-	top: 25%;
+	top: 130px;
 	left: 5%;
 	width: 250px;
 	background-color: rgba(255,255,255,0.6);
