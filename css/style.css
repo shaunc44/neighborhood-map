@@ -21,20 +21,21 @@ body {
 	font-family: 'Arbutus', cursive;
 	font-weight: 200;
 	position: fixed;
-	top: 50px;
-	left: 2%;
+	top: 5px;
+	left: 5px;
 	width: 400px;
+	height: 40px;
 }
 
 input {
 	position: relative;
-	left: 20px;
+	left: 5px;
 }
 
 #search {
 	position: fixed;
-	left: 5%;
-	top: 100px;
+	left: 5px;
+	top: 55px;
 	height: 30px;
 	width: 250px;
 	font-size: 15px;
@@ -44,8 +45,8 @@ input {
 	position: fixed;
 	height: 25%;
 	overflow: auto;
-	top: 130px;
-	left: 5%;
+	top: 85px;
+	left: 5px;
 	width: 250px;
 	background-color: rgba(255,255,255,0.6);
 	margin: 0;
