@@ -12,7 +12,7 @@ INSTRUCTIONS
 SEARCH FUNCTION:
 	Enter a word or some text in the search box. The search 
 	function will filter the list based on the text you entered.
-CLICK THE LIST: 
+THE LIST: 
 	Click any venue in the list. Information from Foursquare will
 	pop up.
 MAP & MARKERS:
