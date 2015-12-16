@@ -173,14 +173,14 @@ var ViewModel = function () {
 				placeItem.canonicalUrl(result.canonicalUrl);
 
 				//Content of the Infowindow
-				var contentString = '<div id="iWindow"><h4>' + placeItem.name() + '</h4><div id="pic"><img src="' +
+				var contentString = '<div id="iWindow"><h5><b>'+ placeItem.name() +'</b></h5><div id="pic"><img src="' +
 					placeItem.photoPrefix() + '110x110' + placeItem.photoSuffix() +
-					'" alt="Image Location"></div><p>Information from Foursquare:</p><p>' +
-					placeItem.phone() + '</p><p>' + placeItem.address() + '</p><p>' +
-					placeItem.description() + '</p><p>Rating: ' + placeItem.rating() +
-					'</p><p><a href=' + placeItem.url() + '>' + placeItem.url() +
-					'</a></p><p><a target="_blank" href=' + placeItem.canonicalUrl() +
-					'>Foursquare Page</a></p><p><a target="_blank" href=https://www.google.com/maps/dir/Current+Location/' +
+					'" alt="Image Location"></div>' +
+					placeItem.phone() + '<p>' + placeItem.address() + '</p><p>' +
+					placeItem.description() + '</p>Rating: ' + placeItem.rating() +
+					'<p><a href=' + placeItem.url() + '>' + placeItem.url() +
+					'</a></p><a target="_blank" href=' + placeItem.canonicalUrl() +
+					'>Foursquare Page</a><p><a target="_blank" href=https://www.google.com/maps/dir/Current+Location/' +
 					placeItem.lat() + ',' + placeItem.lng() + '>Directions</a></p></div>';
 
 				//Infowindow that opens upon mouseover
