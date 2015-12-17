@@ -172,18 +172,36 @@ var ViewModel = function () {
 
 				placeItem.canonicalUrl(result.canonicalUrl);
 
-				//Content of the Infowindow
-				var contentString = '<div id="iWindow"><h5><b>'+ placeItem.name() +'</b></h5><div id="pic"><img src="' +
-					placeItem.photoPrefix() + '110x110' + placeItem.photoSuffix() +
-					'" alt="Image Location"></div>' +
-					placeItem.phone() + '<p>' + placeItem.address() + '</p><p>' +
-					placeItem.description() + '</p>Rating: ' + placeItem.rating() +
-					'<p><a href=' + placeItem.url() + '>' + placeItem.url() +
-					'</a></p><a target="_blank" href=' + placeItem.canonicalUrl() +
-					'>Foursquare Page</a><p><a target="_blank" href=https://www.google.com/maps/dir/Current+Location/' +
-					placeItem.lat() + ',' + placeItem.lng() + '>Directions</a></p></div>';
+				//Foursquare infowindow content
+				var contentString = '<div id="iWindow">' +
+					'<h5><b>' + placeItem.name() + '</b></h5>' +
+					'<div id="pic">' +
+						'<img src="' +
+							placeItem.photoPrefix() + '110x110' +
+							placeItem.photoSuffix() +
+						'" alt="Image Location">' +
+					'</div>' +
+					'<div>' + placeItem.phone() + '</div>' +
+					'<p>' + placeItem.address() + '</p>' +
+					'<p>' + placeItem.description() + '</p>' +
+					'<div>' + 'Rating: ' + placeItem.rating() + '</div>' +
+					'<div>' +
+						'<a href=' +
+							placeItem.url() + '>' +
+							placeItem.url() +
+						'</a>' +
+					'</div>' +
+					'<a target="_blank" href=' +
+						placeItem.canonicalUrl() + '>Foursquare Page' +
+					'</a>' +
+					'<p>' +
+						'<a target="_blank" href=https://www.google.com/maps/dir/Current+Location/' +
+							placeItem.lat() + ',' +
+							placeItem.lng() + '>Directions' +
+						'</a>' +
+					'</p>';
 
-				//Infowindow that opens upon mouseover
+				//Opens InfoWindow upon mouseover
 				google.maps.event.addListener(placeItem.marker, 'mouseover', function() {
 						infowindow.open(map, this);
 						placeItem.marker.setAnimation(google.maps.Animation.BOUNCE);

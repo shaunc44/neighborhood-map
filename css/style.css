@@ -22,19 +22,20 @@ body {
 	font-weight: 200;
 	position: fixed;
 	top: 5px;
-	left: 5px;
-	width: 400px;
+	left: 7.5px;
+	width: 300px;
 	height: 40px;
+	color: #006400;
 }
 
 input {
 	position: relative;
-	left: 5px;
+	left: 7.5px;
 }
 
 #search {
 	position: fixed;
-	left: 5px;
+	left: 7.5px;
 	top: 55px;
 	height: 30px;
 	width: 250px;
@@ -46,7 +47,7 @@ input {
 	height: 25%;
 	overflow: auto;
 	top: 85px;
-	left: 5px;
+	left: 7.5px;
 	width: 250px;
 	background-color: rgba(255,255,255,0.7);
 	margin: 0;
