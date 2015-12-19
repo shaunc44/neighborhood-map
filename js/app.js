@@ -210,6 +210,10 @@ var ViewModel = function () {
 						}, 500);
 						infowindow.setContent(contentString);
 				});
+
+				google.maps.event.addListener(placeItem.marker, 'mouseout', function() {
+						infowindow.close(map, this);
+				});
 			},
 
 			//Foursquare error
@@ -219,7 +223,7 @@ var ViewModel = function () {
 			}
 		});
 
-		//Event listener shows error message on AJAX error display in the infowindow
+		//Event listener shows error msg on AJAX in the infowindow
 		google.maps.event.addListener(marker, 'mouseover', function () {
 			infowindow.open(map, this);
 			placeItem.marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -229,7 +233,7 @@ var ViewModel = function () {
 		});
 	});
 
-	//Activate the appropriate marker when the user mouseovers a list item
+	//Activate the appropriate marker when the user mouses over a list item
 	self.showInfo = function (placeItem) {
 		google.maps.event.trigger(placeItem.marker, 'mouseover');
 		self.hideElements();

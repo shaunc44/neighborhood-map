@@ -62,10 +62,18 @@ input {
 	width: 20%;
 }
 
-@media only screen and (max-width: 960px) {
+/*.gm-style-iw {
+		border-radius: 100px 10px 10px 10px;
+	}*/
+
+@media only screen and (max-width: 975px) {
 	#list-holder {
 		display: none;
 	}
+}
+
+
+
 
 /*
 @media only screen and (max-width: 650px) {
