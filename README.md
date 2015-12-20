@@ -16,8 +16,8 @@ THE LIST:
 	Click any venue in the list. Information from Foursquare will
 	pop up.
 MAP & MARKERS:
-	Move the mouse over any of the markers. The infowindow will 
-	pop up. Click the X in the upper-right-hand-corner of the 
+	Click any of the markers and a Foursquare infowindow will 
+	pop up. Click the X in the upper-right corner of the 
 	infowindow to close the window.
 
 
