@@ -79,7 +79,7 @@ function initMap() {
 	ko.applyBindings(new ViewModel());
 }
 
-//Alert user when google maps isn't working
+//Alert user when google maps is not working
 function googleError() {
 	"use strict";
 	document.getElementById('map').innerHTML = "<h2>Google Maps is not loading. Please refresh the page later.</h2>";
@@ -105,7 +105,7 @@ var Place = function (data) {
 };
 
 
-// ViewModel
+//ViewModel
 var ViewModel = function () {
 	"use strict";
 	var self = this;
@@ -121,6 +121,7 @@ var ViewModel = function () {
 	//Initialize the Infowindow
 	var infowindow = new google.maps.InfoWindow({
 		maxWidth: 200
+		//zIndex: 200
 	});
 
 	//Initialize markers
@@ -177,7 +178,7 @@ var ViewModel = function () {
 					'<h5><b>' + placeItem.name() + '</b></h5>' +
 					'<div id="pic">' +
 						'<img src="' +
-							placeItem.photoPrefix() + '110x110' +
+							placeItem.photoPrefix() + '150x110' +
 							placeItem.photoSuffix() +
 						'" alt="Image Location">' +
 					'</div>' +
@@ -201,7 +202,7 @@ var ViewModel = function () {
 						'</a>' +
 					'</p>';
 
-				//Opens InfoWindow upon mouseover
+				//Opens infowindow upon mouseover
 				google.maps.event.addListener(placeItem.marker, 'mouseover', function() {
 						infowindow.open(map, this);
 						placeItem.marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -209,8 +210,10 @@ var ViewModel = function () {
 							placeItem.marker.setAnimation(null);
 						}, 500);
 						infowindow.setContent(contentString);
+						//infowindow.setZIndex(99999);
 				});
 
+				//Closes infowindow upon mouseout
 				google.maps.event.addListener(placeItem.marker, 'mouseout', function() {
 						infowindow.close(map, this);
 				});
@@ -267,7 +270,8 @@ var ViewModel = function () {
 	//Track user input
 	self.userInput = ko.observable('');
 
-	//If user input is included in the place name make visible, otherwise, remove the place & marker
+	//If user input is included in the place name make visible
+	//If not, remove the place & marker
 	self.filterMarkers = function () {
 
 		//Set all markers and places to not visible.

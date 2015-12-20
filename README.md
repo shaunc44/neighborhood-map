@@ -1,5 +1,5 @@
 UDACITY - FRONTEND NANODEGREE - PROJECT 5 - NEIGHBORHOOD MAP
-==================================================================
+=================================================================
 In this project I created a neighborhood map of downtown
 Burlington, Vermont. This map includes a search by venue function
 that isolates venues (locations) when text is entered in the 
