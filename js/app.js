@@ -200,8 +200,8 @@ var ViewModel = function () {
 						'</a>' +
 					'</p>';
 
-				//Opens infowindow upon mouseover
-				google.maps.event.addListener(placeItem.marker, 'mouseover', function() {
+				//Opens infowindow upon click
+				google.maps.event.addListener(placeItem.marker, 'click', function() {
 						infowindow.open(map, this);
 						placeItem.marker.setAnimation(google.maps.Animation.BOUNCE);
 						setTimeout(function () {
@@ -225,7 +225,7 @@ var ViewModel = function () {
 		});
 
 		//Event listener shows error msg on AJAX in the infowindow
-		google.maps.event.addListener(marker, 'mouseover', function () {
+		google.maps.event.addListener(marker, 'click', function () {
 			infowindow.open(map, this);
 			placeItem.marker.setAnimation(google.maps.Animation.BOUNCE);
 			setTimeout(function () {
@@ -236,7 +236,7 @@ var ViewModel = function () {
 
 	//Activate the appropriate marker when the user mouses over a list item
 	self.showInfo = function (placeItem) {
-		google.maps.event.trigger(placeItem.marker, 'mouseover');
+		google.maps.event.trigger(placeItem.marker, 'click');
 		self.hideElements();
 	};
 
