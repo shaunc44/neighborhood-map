@@ -81,13 +81,11 @@ function initMap() {
 
 //Alert user when google maps is not working
 function googleError() {
-	"use strict";
 	document.getElementById('map').innerHTML = "<h2>Google Maps is not loading. Please refresh the page later.</h2>";
 }
 
 //Place constructor
 var Place = function (data) {
-	"use strict";
 	this.name = ko.observable(data.name);
 	this.lat = ko.observable(data.lat);
 	this.lng = ko.observable(data.lng);
@@ -107,7 +105,6 @@ var Place = function (data) {
 
 //ViewModel
 var ViewModel = function () {
-	"use strict";
 	var self = this;
 
 	//Create an array of all places
