@@ -23,9 +23,9 @@ MAP & MARKERS:
 
 INSTALLATION
 ============
-Open index.html in your web browser, such as FireFox or Chrome
+Open index.html in your web browser, such as FireFox or Chrome, 
 or you can visit shaunc44.github.io/neighborhood-map/ to check 
-out the portfolio. Cheers!
+out the live website. Cheers!
 
 
 SUPPORT

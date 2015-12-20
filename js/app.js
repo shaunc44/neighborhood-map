@@ -86,20 +86,21 @@ function googleError() {
 
 //Place constructor
 var Place = function (data) {
-	this.name = ko.observable(data.name);
-	this.lat = ko.observable(data.lat);
-	this.lng = ko.observable(data.lng);
-	this.id = ko.observable(data.id);
-	this.marker = ko.observable();
-	this.phone = ko.observable('');
-	this.description = ko.observable('');
-	this.address = ko.observable('');
-	this.rating = ko.observable('');
-	this.url = ko.observable('');
-	this.canonicalUrl = ko.observable('');
-	this.photoPrefix = ko.observable('');
-	this.photoSuffix = ko.observable('');
-	this.contentString = ko.observable('');
+	var self = this;
+	self.name = ko.observable(data.name);
+	self.lat = ko.observable(data.lat);
+	self.lng = ko.observable(data.lng);
+	self.id = ko.observable(data.id);
+	self.marker = ko.observable();
+	self.phone = ko.observable('');
+	self.description = ko.observable('');
+	self.address = ko.observable('');
+	self.rating = ko.observable('');
+	self.url = ko.observable('');
+	self.canonicalUrl = ko.observable('');
+	self.photoPrefix = ko.observable('');
+	self.photoSuffix = ko.observable('');
+	self.contentString = ko.observable('');
 };
 
 
@@ -108,7 +109,7 @@ var ViewModel = function () {
 	var self = this;
 
 	//Create an array of all places
-	this.placeList = ko.observableArray([]);
+	self.placeList = ko.observableArray([]);
 
 	//Create Place objects for each location item & store in the above array
 	locations.forEach(function(placeItem) {
