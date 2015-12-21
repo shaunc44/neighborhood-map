@@ -18,15 +18,24 @@ body {
 	position: relative;
 }
 
+/*.h3 {
+	margin-top: 10px;
+}*/
+
 #pageTitle {
 	font-family: 'Arbutus', cursive;
 	font-weight: 200;
 	position: fixed;
+	margin: 0px;
 	top: 5px;
-	left: 7.5px;
+	left: 10px;
 	width: 300px;
-	height: 40px;
+	height: 30px;
 	color: #006400;
+}
+
+h3 {
+	margin-top: 7.5px;
 }
 
 input {
@@ -37,7 +46,7 @@ input {
 #search {
 	position: fixed;
 	left: 7.5px;
-	top: 55px;
+	top: 42px;
 	height: 30px;
 	width: 250px;
 	font-size: 15px;
@@ -47,7 +56,7 @@ input {
 	position: fixed;
 	height: 25%;
 	overflow: auto;
-	top: 85px;
+	top: 72px;
 	left: 7.5px;
 	width: 250px;
 	background-color: rgba(255,255,255,0.7);
@@ -64,12 +73,16 @@ input {
 }
 
 .gm-style-iw {
-	/*position: absolute;*/
-	z-index: 9999;
+	/*position: absolute;
+	z-index: 9999;*/
 }
 
 @media only screen and (max-width: 975px) {
-	#list-holder {
+	/*#list-holder {
 		display: none;
-	}
+	}*/
 }
+
+
+
+

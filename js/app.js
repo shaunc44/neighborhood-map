@@ -211,10 +211,12 @@ var ViewModel = function () {
 						//infowindow.setZIndex(99999);
 				});
 
+				/*
 				//Closes infowindow upon mouseout
 				google.maps.event.addListener(placeItem.marker, 'mouseout', function() {
 						infowindow.close(map, this);
 				});
+				*/
 			},
 
 			//Foursquare error
