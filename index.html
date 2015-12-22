@@ -18,11 +18,16 @@
 		<div id="map" data-bind="click: hideElements"></div>
 		<div id="pageTitle"><h3>Burlington, VT</h3></div>
 		<div data-bind="css: navStatus"></div>
-		<input id="search" placeholder="Search for a Park, Pub or Grub" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
-		<div id="list-holder">
-			<ul id="list-view" data-bind="foreach: visible">
-				<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
-			</ul>
+		<div class="container">
+			<form class="searchbox">
+				<input id="search" placeholder="Search for a Park, Pub or Grub" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+				<span class="search-icon">GO</span>
+				<div id="list-holder">
+					<ul id="list-view" data-bind="foreach: visible">
+						<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
+					</ul>
+				</div>
+			</form>
 		</div>
 
 		<script src="js/knockout-3.4.0.js"></script>
