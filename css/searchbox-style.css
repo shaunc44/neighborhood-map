@@ -2,6 +2,7 @@
 Credit: http://codepen.io/nikhil/pen/qcyGF
 */
 
+
 body{
     background:#475f77;
 }
@@ -16,7 +17,7 @@ body{
     min-width:50px;
     width:0%;
     height:50px;
-    float:right;
+    float:left;
     overflow:hidden;
     
     -webkit-transition: width 0.3s;
@@ -37,19 +38,19 @@ body{
     margin:0;
     padding:0px 55px 0px 20px;
     font-size:20px;
-    color:red;
+    color:black;
 }
 .searchbox-input::-webkit-input-placeholder {
-    color: #d74b4b;
+    color: black;
 }
 .searchbox-input:-moz-placeholder {
-    color: #d74b4b;
+    color: black;
 }
 .searchbox-input::-moz-placeholder {
-    color: #d74b4b;
+    color: black;
 }
 .searchbox-input:-ms-input-placeholder {
-    color: #d74b4b;
+    color: black;
 }
 
 .searchbox-icon,
@@ -73,20 +74,6 @@ body{
     background:#172b3c;
 }
 
-
-
 .searchbox-open{
     width:100%;
-}
-
-.byline{
-  position:absolute;
-  top:150px;
-  left:30%;
-  text-align:center;
-  font-size:18px;
-}
-.byline a{
-  text-decoration:none;
-  color: #d74b4b;
 }
