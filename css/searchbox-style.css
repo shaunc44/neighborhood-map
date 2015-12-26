@@ -2,9 +2,10 @@
 Credit: http://codepen.io/nikhil/pen/qcyGF
 */
 
+/*
 body{
     background:#475f77;
-}
+}*/
 
 .container{
     width:600px;
@@ -18,12 +19,26 @@ body{
     height:50px;
     float:left;
     overflow:hidden;
-    
+
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     -ms-transition: width 0.3s;
     -o-transition: width 0.3s;
     transition: width 0.3s;
+}
+
+input {
+    position: relative;
+    left: 7.5px;
+}
+
+#search {
+    position: fixed;
+    left: 7.5px;
+    top: 42px;
+    height: 30px;
+    width: 250px;
+    font-size: 15px;
 }
 
 .searchbox-input{
@@ -39,15 +54,19 @@ body{
     font-size:20px;
     color:black;
 }
+
 .searchbox-input::-webkit-input-placeholder {
     color: black;
 }
+
 .searchbox-input:-moz-placeholder {
     color: black;
 }
+
 .searchbox-input::-moz-placeholder {
     color: black;
 }
+
 .searchbox-input:-ms-input-placeholder {
     color: black;
 }
@@ -73,6 +92,21 @@ body{
     background:#172b3c;
 }
 
+#list-view {
+    position: fixed;
+    height: 25%;
+    overflow: auto;
+    top: 72px;
+    left: 7.5px;
+    width: 250px;
+    background-color: rgba(255,255,255,0.7);
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
+
 .searchbox-open{
     width:100%;
 }
+
+
