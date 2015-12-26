@@ -10,8 +10,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Chillin' in Burlington">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<!--searchbox-style.css cause box to not work****-->
+		<!--<link rel="stylesheet" href="css/style.css">
+		**removing style.css materializes the GO button, but makes everything else blue-->
+		<!--searchbox-style.css causes search box to change but leave the map and markers in tact****-->
 		<link rel="stylesheet" href="css/searchbox-style.css">
 		<link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet' type='text/css'>
 	</head>
@@ -24,7 +25,7 @@
 			<form class="searchbox">
 				<input id="search" placeholder="Search for a Park, Pub or Grub" name="search" class="searchbox-input" onkeyup="buttonUp();" required data-bind="textInput: userInput, event: {keyup: filterMarkers}">
 				<input type="submit" class="searchbox-submit" value="GO">
-				<span class="search-icon">GO</span>
+				<span class="searchbox-icon">GO</span>
 				<div id="list-holder">
 					<ul id="list-view" data-bind="foreach: visible">
 						<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
@@ -34,6 +35,7 @@
 		</div>
 
 		<script src="js/knockout-3.4.0.js"></script>
+		<script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/searchbox.js"></script>

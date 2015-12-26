@@ -2,14 +2,13 @@
 Credit: http://codepen.io/nikhil/pen/qcyGF
 */
 
-
 body{
     background:#475f77;
 }
 
 .container{
     width:600px;
-    margin:50px auto;
+    margin:20px;
 }
 
 .searchbox{
