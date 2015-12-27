@@ -27,14 +27,14 @@
 		<div id="pageTitle"><h3>Burlington, VT</h3></div>
 		<div data-bind="css: navStatus"></div>
 
-		<div class="container">
-			<form class="searchbox">
-				<input type="search" placeholder="Search for a Park, Pub or Grub" name="search" class="searchbox-input" onkeyup="buttonUp();" required data-bind="textInput: userInput, event: {keyup: filterMarkers}">
-				<input type="submit" class="searchbox-submit" value="GO">
-				<span class="searchbox-icon">GO</span>
-				<div class="list-holder">
-					<ul class="list-view" data-bind="foreach: visible">
-						<li class="list-name" data-bind="text: name, click: $parent.showInfo"></li>
+		<div id="container">
+			<form id="searchbox">
+				<input type="search" placeholder="Search for a Park, Pub or Grub" name="search" id="searchbox-input" onkeyup="buttonUp();" required data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+				<input type="submit" id="searchbox-submit" value="GO">
+				<span id="searchbox-icon">GO</span>
+				<div id="list-holder">
+					<ul id="list-view" data-bind="foreach: visible">
+						<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
 					</ul>
 				</div>
 			</form>

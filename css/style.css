@@ -18,9 +18,9 @@ body,
 	padding: 0;
 }
 
-	body {
-		position: relative;
-	}
+body {
+	position: relative;
+}
 
 /* -----------------------------------------------------------*/
 /* --------------------->>> HEADING <<<-----------------------*/
@@ -38,10 +38,123 @@ body,
 	color: #006400;
 }
 
-	h3 {
-		margin-top: 7.5px;
-	}
+h3 {
+	margin-top: 7.5px;
+}
 
+/* -----------------------------------------------------------*/
+/* --------------->>> LIST AND SEARCH BOX <<<-----------------*/
+/* -----------------------------------------------------------*/
+
+#container{
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+#searchbox{
+	position: absolute;
+	min-width: 50px;
+	width: 0%;
+	top: 0;
+	height: 30px;
+	float: left;
+	overflow: hidden;
+
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	-ms-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
+/*
+input {
+    position: relative;
+    left: 7.5px;
+}
+*/
+
+/*
+.search {
+    position: fixed;
+    left: 7.5px;
+    top: 42px;
+    height: 30px;
+    width: 250px;
+    font-size: 15px;
+}
+*/
+
+#searchbox-input{
+	position: fixed;
+	left: 7.5px;
+	top: 42px;
+	right: 0;
+	border: 0;
+	outline: 0;
+	background: #dcddd8;
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	padding: 0px 55px 0px 20px;
+	font-size: 20px;
+	color: black;
+}
+
+#searchbox-input::-webkit-input-placeholder {
+    color: black;
+}
+
+#searchbox-input:-moz-placeholder {
+    color: black;
+}
+
+#searchbox-input::-moz-placeholder {
+    color: black;
+}
+
+#searchbox-input:-ms-input-placeholder {
+    color: black;
+}
+
+#searchbox-icon,
+#searchbox-submit{
+    width:30px;
+    height:30px;
+    display:block;
+    position: fixed;
+    top:0;
+    font-family:verdana;
+    font-size:15px;
+    right:0;
+    padding:0;
+    margin:0;
+    border:0;
+    outline:0;
+    line-height:50px;
+    text-align:center;
+    cursor:pointer;
+    color:#dcddd8;
+    background:#172b3c;
+}
+
+#searchbox-open{
+    width:100%;
+}
+
+#list-view {
+    position: fixed;
+    height: 25%;
+    overflow: auto;
+    top: 172px;
+    left: 7.5px;
+    width: 250px;
+    background-color: rgba(255,255,255,0.7);
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
 
 /*Do I still need this error style ???????
 #error {
