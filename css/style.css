@@ -1,3 +1,7 @@
+/* -----------------------------------------------------------*/
+/* ------------------>>> GLOBAL SYTLES <<<--------------------*/
+/* -----------------------------------------------------------*/
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -5,18 +9,22 @@
 	box-sizing: border-box;
 }
 
+/*Removing body displays the search icon, search box, page title and list but blanks the map*/
 html,
 body,
 #map {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	z-index: 0;
 }
 
-body {
-	position: relative;
-}
+	body {
+		position: relative;
+	}
+
+/* -----------------------------------------------------------*/
+/* --------------------->>> HEADING <<<-----------------------*/
+/* -----------------------------------------------------------*/
 
 #pageTitle {
 	font-family: 'Arbutus', cursive;
@@ -30,16 +38,19 @@ body {
 	color: #006400;
 }
 
-h3 {
-	margin-top: 7.5px;
-}
+	h3 {
+		margin-top: 7.5px;
+	}
 
+
+/*Do I still need this error style ???????
 #error {
 	position: fixed;
 	top: 350px;
 	left: 5%;
 	width: 20%;
 }
+*/
 
 .gm-style-iw {
 	/*position: absolute;

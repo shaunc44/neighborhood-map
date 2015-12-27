@@ -9,14 +9,16 @@ body{
 
 .container{
     width:600px;
-    margin:20px;
+    margin:0;
+    padding: 0;
 }
 
 .searchbox{
     position:relative;
     min-width:50px;
     width:0%;
-    height:50px;
+    top: 0;
+    height:30px;
     float:left;
     overflow:hidden;
 
@@ -27,12 +29,15 @@ body{
     transition: width 0.3s;
 }
 
+/*
 input {
     position: relative;
     left: 7.5px;
 }
+*/
 
-#search {
+/*
+.search {
     position: fixed;
     left: 7.5px;
     top: 42px;
@@ -40,15 +45,18 @@ input {
     width: 250px;
     font-size: 15px;
 }
+*/
 
 .searchbox-input{
-    top:0;
+    position: relative;
+    left: 7.5px;
+    top:42px;
     right:0;
     border:0;
     outline:0;
     background:#dcddd8;
     width:100%;
-    height:50px;
+    height:30px;
     margin:0;
     padding:0px 55px 0px 20px;
     font-size:20px;
@@ -73,13 +81,13 @@ input {
 
 .searchbox-icon,
 .searchbox-submit{
-    width:50px;
-    height:50px;
+    width:30px;
+    height:30px;
     display:block;
     position:absolute;
     top:0;
     font-family:verdana;
-    font-size:22px;
+    font-size:15px;
     right:0;
     padding:0;
     margin:0;
@@ -92,11 +100,11 @@ input {
     background:#172b3c;
 }
 
-#list-view {
+.list-view {
     position: fixed;
     height: 25%;
     overflow: auto;
-    top: 72px;
+    top: 172px;
     left: 7.5px;
     width: 250px;
     background-color: rgba(255,255,255,0.7);
