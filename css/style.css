@@ -18,10 +18,6 @@ body,
 	padding: 0;
 }
 
-body {
-	position: relative;
-}
-
 /* -----------------------------------------------------------*/
 /* --------------------->>> HEADING <<<-----------------------*/
 /* -----------------------------------------------------------*/
@@ -29,7 +25,7 @@ body {
 #pageTitle {
 	font-family: 'Arbutus', cursive;
 	font-weight: 200;
-	position: fixed;
+	position: absolute;
 	margin: 0px;
 	top: 5px;
 	left: 10px;
@@ -56,7 +52,8 @@ h3 {
 	position: absolute;
 	min-width: 50px;
 	width: 0%;
-	top: 0;
+	top: 42px;
+	left: 258px;
 	height: 30px;
 	float: left;
 	overflow: hidden;
@@ -94,7 +91,7 @@ input {
 	border: 0;
 	outline: 0;
 	background: #dcddd8;
-	width: 100%;
+	width: 250px;
 	height: 30px;
 	margin: 0;
 	padding: 0px 55px 0px 20px;
@@ -120,23 +117,21 @@ input {
 
 #searchbox-icon,
 #searchbox-submit{
-    width:30px;
-    height:30px;
-    display:block;
-    position: fixed;
-    top:0;
-    font-family:verdana;
-    font-size:15px;
-    right:0;
-    padding:0;
-    margin:0;
-    border:0;
-    outline:0;
-    line-height:50px;
-    text-align:center;
-    cursor:pointer;
-    color:#dcddd8;
-    background:#172b3c;
+	position: absolute;
+	top: 0;
+	font-family: verdana;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #dcddd8;
+	background: #172b3c;
 }
 
 #searchbox-open{
@@ -147,7 +142,7 @@ input {
     position: fixed;
     height: 25%;
     overflow: auto;
-    top: 172px;
+    top: 72px;
     left: 7.5px;
     width: 250px;
     background-color: rgba(255,255,255,0.7);
