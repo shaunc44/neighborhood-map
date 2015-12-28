@@ -9,7 +9,6 @@
 	box-sizing: border-box;
 }
 
-/*Removing body displays the search icon, search box, page title and list but blanks the map*/
 html,
 body,
 #map {
@@ -42,7 +41,7 @@ h3 {
 /* --------------->>> LIST AND SEARCH BOX <<<-----------------*/
 /* -----------------------------------------------------------*/
 
-#container{
+#container {
 	width: 600px;
 	margin: 0;
 	padding: 0;
@@ -65,24 +64,6 @@ h3 {
 	transition: width 0.3s;
 }
 
-/*
-input {
-    position: relative;
-    left: 7.5px;
-}
-*/
-
-/*
-.search {
-    position: fixed;
-    left: 7.5px;
-    top: 42px;
-    height: 30px;
-    width: 250px;
-    font-size: 15px;
-}
-*/
-
 #searchbox-input{
 	position: fixed;
 	left: 7.5px;
@@ -94,8 +75,8 @@ input {
 	width: 250px;
 	height: 30px;
 	margin: 0;
-	padding: 0px 55px 0px 20px;
-	font-size: 20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 13px;
 	color: black;
 }
 
@@ -119,19 +100,19 @@ input {
 #searchbox-submit{
 	position: absolute;
 	top: 0;
-	font-family: verdana;
-	font-size: 15px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 18px;
 	padding: 0;
 	margin: 0;
 	border: 0;
 	outline: 0;
 	width: 30px;
 	height: 30px;
-	line-height: 50px;
+	line-height: 30px;
 	text-align: center;
 	cursor: pointer;
-	color: #dcddd8;
-	background: #172b3c;
+	color: white;
+	background: #006400;
 }
 
 #searchbox-open{
