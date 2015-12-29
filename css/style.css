@@ -1,6 +1,6 @@
-/* -----------------------------------------------------------*/
-/* ------------------>>> GLOBAL SYTLES <<<--------------------*/
-/* -----------------------------------------------------------*/
+/* ----------------------------------------------------------- */
+/* ------------------>>> GLOBAL STYLES <<<-------------------- */
+/* ----------------------------------------------------------- */
 
 * {
 	-webkit-box-sizing: border-box;
@@ -17,9 +17,9 @@ body,
 	padding: 0;
 }
 
-/* -----------------------------------------------------------*/
-/* --------------------->>> HEADING <<<-----------------------*/
-/* -----------------------------------------------------------*/
+/* ----------------------------------------------------------- */
+/* --------------------->>> HEADING <<<----------------------- */
+/* ----------------------------------------------------------- */
 
 #pageTitle {
 	font-family: 'Arbutus', cursive;
@@ -37,9 +37,10 @@ h3 {
 	margin-top: 7.5px;
 }
 
-/* -----------------------------------------------------------*/
-/* --------------->>> LIST AND SEARCH BOX <<<-----------------*/
-/* -----------------------------------------------------------*/
+/* ----------------------------------------------------------- */
+/* --------------->>> LIST AND SEARCH BOX <<<----------------- */
+/* ----------------------------------------------------------- */
+/* ------- Credit: http://codepen.io/nikhil/pen/qcyGF -------- */
 
 #container {
 	width: 600px;
@@ -47,7 +48,7 @@ h3 {
 	padding: 0;
 }
 
-#searchbox{
+#searchbox {
 	position: absolute;
 	min-width: 50px;
 	width: 0%;
@@ -64,7 +65,7 @@ h3 {
 	transition: width 0.3s;
 }
 
-#searchbox-input{
+#searchbox-input {
 	position: fixed;
 	left: 7.5px;
 	top: 42px;
@@ -81,27 +82,27 @@ h3 {
 }
 
 #searchbox-input::-webkit-input-placeholder {
-    color: black;
+	color: black;
 }
 
 #searchbox-input:-moz-placeholder {
-    color: black;
+	color: black;
 }
 
 #searchbox-input::-moz-placeholder {
-    color: black;
+	color: black;
 }
 
 #searchbox-input:-ms-input-placeholder {
-    color: black;
+	color: black;
 }
 
 #searchbox-icon,
-#searchbox-submit{
+#searchbox-submit {
 	position: absolute;
 	top: 0;
 	font-family: 'Dancing Script', cursive;
-	font-size: 18px;
+	font-size: 20px;
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -115,21 +116,21 @@ h3 {
 	background: #006400;
 }
 
-#searchbox-open{
-    width:100%;
+#searchbox-open {
+	width:100%;
 }
 
 #list-view {
-    position: fixed;
-    height: 25%;
-    overflow: auto;
-    top: 72px;
-    left: 7.5px;
-    width: 250px;
-    background-color: rgba(255,255,255,0.7);
-    margin: 0;
-    padding: 0;
-    font-size: 1.1em;
+	position: fixed;
+	height: 25%;
+	overflow: auto;
+	top: 72px;
+	left: 7.5px;
+	width: 250px;
+	background-color: rgba(255,255,255,0.7);
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
 }
 
 /*Do I still need this error style ???????
@@ -140,6 +141,10 @@ h3 {
 	width: 20%;
 }
 */
+
+/* ----------------------------------------------------------- */
+/* ---------------->>> RESPONSIVE DESIGN <<<------------------ */
+/* ----------------------------------------------------------- */
 
 .gm-style-iw {
 	/*position: absolute;

@@ -8,26 +8,19 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Chillin' in Burlington">
+		<meta name="description" content="Downtown Burlington, Vermont">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
 		<link rel="stylesheet" href="css/style.css">
-		<!--**removing style.css shows the GO button, list and searchbox, but makes the map go blank-->
-
-		<!--
-		<link rel="stylesheet" href="css/searchbox-style.css">
-		***searchbox-style.css causes search box to change but leaves the map and markers in tact****-->
-
 		<link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<!--Removing IDs from body make entire page white, except page title-->
 		<div id="map" data-bind="click: hideElements"></div>
 		<div id="pageTitle"><h3>Burlington, VT</h3></div>
 		<div data-bind="css: navStatus"></div>
 
+		<!-- Searchbox, search icon and list -->
 		<div id="container">
 			<form id="searchbox">
 				<input type="search" placeholder="Search for a Park, Pub or Grub" name="search" id="searchbox-input" onkeyup="buttonUp();" required data-bind="textInput: userInput, event: {keyup: filterMarkers}">
