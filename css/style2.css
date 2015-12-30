@@ -46,7 +46,8 @@ h3 {
 	position: absolute;
 	top: 42px;
 	left: 7.5px;
-	width: 600px;
+	width: 250px;
+	height: 250px;
 	margin: 0;
 	padding: 0;
 }
@@ -98,12 +99,11 @@ h3 {
 
 .searchbox-icon,
 .searchbox-submit {
+	position: absolute;
 	width: 30px;
 	height: 30px;
-	display: block;
-	position: absolute;
-	top: 42px;
-	left: 7.5px;
+	top: 0;
+	left: 0;
 	font-family: 'Dancing Script', cursive;
 	font-size: 20px;
 	padding: 0;
