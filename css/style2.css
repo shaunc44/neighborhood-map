@@ -43,17 +43,17 @@ h3 {
 
 /* Credit: http://codepen.io/nikhil/pen/qcyGF */
 .container {
+	position: absolute;
+	top: 42px;
+	left: 7.5px;
 	width: 600px;
 	margin: 0;
 	padding: 0;
 }
 
 .searchbox {
-	position: absolute;
 	min-width: 30px;
 	width: 0%;
-	top: 42px;
-	left: 258px;
 	height: 30px;
 	float: left;
 	overflow: hidden;
@@ -66,14 +66,13 @@ h3 {
 }
 
 .searchbox-input {
-	position: fixed;
-	left: 7.5px;
 	top: 42px;
+	left: 7.5px;
 	right: 0;
 	border: 0;
 	outline: 0;
 	background: #dcddd8;
-	width: 250px;
+	width: 100%;
 	height: 30px;
 	margin: 0;
 	padding: 0px 0px 0px 5px;
@@ -99,16 +98,18 @@ h3 {
 
 .searchbox-icon,
 .searchbox-submit {
+	width: 30px;
+	height: 30px;
+	display: block;
 	position: absolute;
-	top: 0;
+	top: 42px;
+	left: 7.5px;
 	font-family: 'Dancing Script', cursive;
 	font-size: 20px;
 	padding: 0;
 	margin: 0;
 	border: 0;
 	outline: 0;
-	width: 30px;
-	height: 30px;
 	line-height: 30px;
 	text-align: center;
 	cursor: pointer;
@@ -124,7 +125,7 @@ h3 {
 	position: fixed;
 	height: 25%;
 	overflow: auto;
-	top: 72px;
+	top: 120px;
 	left: 7.5px;
 	width: 250px;
 	background-color: rgba(255,255,255,0.7);
