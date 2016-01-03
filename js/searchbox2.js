@@ -5,28 +5,25 @@ $(document).ready(function() {
     var submitIcon = $('.searchbox-icon');
     var inputBox = $('.searchbox-input');
     var searchBox = $('.searchbox');
-    // ** My Addition **
-    var listBox = $('.list-view');
+    // ** I don't think i need this bc list is part of search box **
+    //var listBox = $('.list-view');
     var isOpen = false;
     //Run function when submitIcon is clicked
     submitIcon.click(function() {
         if (isOpen == false){
             //Add a class name to the first p element of searchbox
             searchBox.addClass('searchbox-open');
-            listBox.addClass('list-holder-open');
             inputBox.focus();
-            listBox.focus();
             isOpen = true;
         } else {
             //Removes searchbox-open class from all p elements
             searchBox.removeClass('searchbox-open');
-            listBox.removeClass('list-holder-open');
             inputBox.focusout();
-            listBox.focusout();
             isOpen = false;
         }
     });
 
+    //Hides the searchbox input when user clicks outside of the box
     //Release the mouse button over submit icon and searchbox???
     submitIcon.mouseup(function() {
         return false;
@@ -42,8 +39,6 @@ $(document).ready(function() {
         if (isOpen == true){
             $('.searchbox-icon').css('display','block');
             submitIcon.click();
-            $('.list-holder-open').css('display','block');
-            submitIcon.click();
         }
     });
 });
@@ -57,19 +52,6 @@ function buttonUp() {
         $('.searchbox-icon').css('display','none');
     } else {
         $('.searchbox-input').val('');
-        $('.searchbox-icon').css('display','block');
-    }
-}
-
-function buttonUp2() {
-    //Return the value of searchbox-input
-    var listVal = $('.list-view').val();
-    //.trim() removes whitespace from both sides of the string
-    listVal = $.trim(listVal).length;
-    if (listVal !== 0){
-        $('.searchbox-icon').css('display','none');
-    } else {
-        $('.list-view').val('');
         $('.searchbox-icon').css('display','block');
     }
 }

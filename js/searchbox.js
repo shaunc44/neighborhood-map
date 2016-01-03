@@ -5,13 +5,16 @@ $(document).ready(function() {
     var submitIcon = $('.searchbox-icon');
     var inputBox = $('.searchbox-input');
     var searchBox = $('.searchbox');
+    //var listBox = $('.list-view');
     var isOpen = false;
     //Run function when submitIcon is clicked
     submitIcon.click(function() {
         if (isOpen == false){
             //addClass adds a class name to the first p element of searchbox
             searchBox.addClass('searchbox-open');
+            listBox = ('list-holder-open');
             inputBox.focus();
+            //listBox.focus();
             isOpen = true;
         } else {
             //removeClass removes searchbox-open class from all p elements
@@ -30,10 +33,10 @@ $(document).ready(function() {
         return false;
     });
     $(document).mouseup(function() {
-        if (isOpen == true){
-            $('.searchbox-icon').css('display','block');
-            submitIcon.click();
-        }
+    if (isOpen == true){
+        $('.searchbox-icon').css('display','block');
+        submitIcon.click();
+    }
     });
 });
 
