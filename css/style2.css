@@ -127,10 +127,11 @@ h3 {
 	width: 100%;
 }
 
+/************** width: 0; here makes the list disappear ************/
 .list-holder,
 .list-view {
 	height: 200px;
-	width: 250px;
+	width: 0%;
 }
 
 .list-view {

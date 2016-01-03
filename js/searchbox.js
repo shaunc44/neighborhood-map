@@ -5,25 +5,24 @@ $(document).ready(function() {
     var submitIcon = $('.searchbox-icon');
     var inputBox = $('.searchbox-input');
     var searchBox = $('.searchbox');
-    // ** My Addition
-    var listBox = $('.list-view');
     var isOpen = false;
     //Run function when submitIcon is clicked
     submitIcon.click(function() {
         if (isOpen == false){
-            //Add a class name to the first p element of searchbox
+            //addClass adds a class name to the first p element of searchbox
             searchBox.addClass('searchbox-open');
             inputBox.focus();
-            listBox.focus();
             isOpen = true;
         } else {
-            //Removes searchbox-open class from all p elements
+            //removeClass removes searchbox-open class from all p elements
             searchBox.removeClass('searchbox-open');
             inputBox.focusout();
             isOpen = false;
         }
     });
-    //Release the mouse button over submit icon and searchbox???
+
+    //Hides the searchbox input when user clicks outside of the box
+    //mouseup releases the mouse button over submit icon and searchbox???
     submitIcon.mouseup(function() {
         return false;
     });
