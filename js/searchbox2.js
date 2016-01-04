@@ -4,6 +4,7 @@
 $(document).ready(function() {
     var submitIcon = $('.searchbox-icon');
     var inputBox = $('.searchbox-input');
+    var listBox = $('.list-view')
     var searchBox = $('.searchbox');
     // ** I don't think i need this bc list is part of search box **
     //var listBox = $('.list-view');
@@ -12,13 +13,15 @@ $(document).ready(function() {
     submitIcon.click(function() {
         if (isOpen == false){
             //Add a class name to the first p element of searchbox
-            searchBox.addClass('searchbox-open');
+            searchBox.addClass('searchbox-open','list-holder-open');
             inputBox.focus();
+            listBox.focus();
             isOpen = true;
         } else {
             //Removes searchbox-open class from all p elements
-            searchBox.removeClass('searchbox-open');
+            searchBox.removeClass('searchbox-open','list-holder-open');
             inputBox.focusout();
+            listBox.focusout();
             isOpen = false;
         }
     });
