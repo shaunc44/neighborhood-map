@@ -14,7 +14,7 @@
 		<!-- CSS LINKS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
 	</head>
@@ -29,23 +29,21 @@
 		</div>
 		<div data-bind="css: navStatus"></div>
 
+
 		<!-- Searchbox, search icon and list -->
-		<div class="container">
-			<input class="search" placeholder="Search for a Park, Pub or Grub ..." data-bind="textInput: userInput, event: {keyup: filterMarkers}">
-			<!-- Maybe dispense with the list-holder???? -->
-			<div class="list-holder">
-				<ul class="list-view" data-bind="foreach: visible">
-					<li class="list-name" data-bind="text: name, click: $parent.showInfo"></li>
-				</ul>
-			</div>
-		</div>
 
 		<!-- Toggle menu on and off -->
-		<div class="toggler">
-			<div id="effect" class="ui-widget-content ui-corner-all">
+		<div class="container">
+			<!--<div id="effect" class="ui-widget-content ui-corner-all"></div>
 				<!--<h3 class="ui-widget-header ui-corner-all">Toggle</h3>-->
-				<p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.</p>
-			</div>
+				<input class="search" placeholder="Search for a Park, Pub or Grub ..." data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+			<!-- Maybe dispense with the list-holder???? -->
+				<div class="list-holder">
+					<ul class="list-view" data-bind="foreach: visible">
+						<li class="list-name" data-bind="text: name, click: $parent.showInfo"></li>
+					</ul>
+				</div>
+
 		</div>
 
 		<!-- JAVASCRIPT -->

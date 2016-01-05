@@ -21,10 +21,10 @@ $(function() {
                 }
             };
         }
-        
+
         //run the effect
         //$("#effect").toggle(selectedEffect, options, 1000);
-        $("#effect").toggle('slide',250);
+        $(".container").toggle('slide',250);
     };
 
     //set effect from select menu value

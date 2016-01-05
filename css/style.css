@@ -38,99 +38,71 @@ h3 {
 }
 
 /* ----------------------------------------------------------- */
+/* ---------->>> TOGGLER FOR LIST AND SEARCHBOX <<<----------- */
+/* ----------------------------------------------------------- */
+
+.toggler {
+	position: absolute;
+	top: 42px;
+	left: 7.5px;
+	height: 230px;
+	width: 250px;
+
+}
+
+#button {
+	position: absolute;
+	top: 10px;
+	left: 235px;
+	padding: .2em .4em;
+	text-decoration: none;
+	color: #006400;
+	border-color: #006400;
+}
+
+/*
+#effect {
+	position: relative;
+	width: 240px;
+	height: 135px;
+	padding: 0.4em;
+}
+*/
+
+/* ----------------------------------------------------------- */
 /* --------------->>> LIST AND SEARCH BOX <<<----------------- */
 /* ----------------------------------------------------------- */
 
-/* Credit: http://codepen.io/nikhil/pen/qcyGF */
 .container {
-	width: 600px;
-	margin: 0;
-	padding: 0;
-}
-
-.searchbox {
 	position: absolute;
-	min-width: 30px;
-	width: 0%;
 	top: 42px;
-	left: 258px;
-	height: 30px;
-	float: left;
-	overflow: hidden;
-
-	-webkit-transition: width 0.3s;
-	-moz-transition: width 0.3s;
-	-ms-transition: width 0.3s;
-	-o-transition: width 0.3s;
-	transition: width 0.3s;
-}
-
-.searchbox-input {
-	position: fixed;
 	left: 7.5px;
-	top: 42px;
-	right: 0;
-	border: 0;
-	outline: 0;
-	background: #dcddd8;
+	height: 230px;
 	width: 250px;
-	height: 30px;
 	margin: 0;
-	padding: 0px 0px 0px 5px;
-	font-size: 13px;
-	color: black;
-}
-
-.searchbox-input::-webkit-input-placeholder {
-	color: black;
-}
-
-.searchbox-input:-moz-placeholder {
-	color: black;
-}
-
-.searchbox-input::-moz-placeholder {
-	color: black;
-}
-
-.searchbox-input:-ms-input-placeholder {
-	color: black;
-}
-
-.searchbox-icon,
-.searchbox-submit {
-	position: absolute;
-	top: 0;
-	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
 	padding: 0;
-	margin: 0;
-	border: 0;
-	outline: 0;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	cursor: pointer;
-	color: white;
-	background: #006400;
 }
 
-.searchbox-open {
-	width:100%;
+.search {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 30px;
+	width: 250px;
+	font-size: 12px;
 }
 
 .list-view {
-	position: fixed;
-	height: 25%;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	height: 200px;
+	width: 100%;
 	overflow: auto;
-	top: 72px;
-	left: 7.5px;
-	width: 250px;
 	background-color: rgba(255,255,255,0.7);
 	margin: 0;
 	padding: 0;
-	font-size: 1.1em;
+	font-size: 15px;
 }
 
 /*Do I still need this error style ???????
@@ -146,17 +118,8 @@ h3 {
 /* ---------------->>> RESPONSIVE DESIGN <<<------------------ */
 /* ----------------------------------------------------------- */
 
-.gm-style-iw {
-	/*position: absolute;
-	z-index: 9999;*/
-}
-
 @media only screen and (max-width: 975px) {
 	/*#list-holder {
 		display: none;
 	}*/
 }
-
-
-
-
