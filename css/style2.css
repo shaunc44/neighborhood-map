@@ -41,117 +41,40 @@ h3 {
 /* --------------->>> LIST AND SEARCH BOX <<<----------------- */
 /* ----------------------------------------------------------- */
 
-/* Credit: http://codepen.io/nikhil/pen/qcyGF */
 .container {
 	position: absolute;
 	top: 42px;
 	left: 7.5px;
-	width: 250px;
 	height: 230px;
+	width: 250px;
 	margin: 0;
 	padding: 0;
 }
 
-.searchbox {
-	min-width: 30px;
-	width: 0%;
-	height: 30px;
-}
-
-.searchbox,
-.list-holder {
-	float: left;
-	overflow: hidden;
-
-	-webkit-transition: width 0.3s;
-	-moz-transition: width 0.3s;
-	-ms-transition: width 0.3s;
-	-o-transition: width 0.3s;
-	transition: width 0.3s;
-}
-
-.searchbox-input {
-	top: 42px;
-	left: 7.5px;
-	right: 0;
-	border: 0;
-	outline: 0;
-	background: #dcddd8;
-	width: 100%;
-	height: 30px;
-	margin: 0;
-	padding: 0px 0px 0px 35px;
-	font-size: 13px;
-	color: black;
-}
-
-.searchbox-input::-webkit-input-placeholder {
-	color: black;
-}
-
-.searchbox-input:-moz-placeholder {
-	color: black;
-}
-
-.searchbox-input::-moz-placeholder {
-	color: black;
-}
-
-.searchbox-input:-ms-input-placeholder {
-	color: black;
-}
-
-.searchbox-icon,
-.searchbox-submit {
+.search {
 	position: absolute;
-	width: 60px;
-	height: 30px;
-	display: block;
-	top: 0;
+	top: 5px;
 	left: 0;
-	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
-	right: 0;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	outline: 0;
-	line-height: 30px;
-	text-align: center;
-	cursor: pointer;
-	color: white;
-	background: #006400;
+	height: 30px;
+	width: 250px;
+	font-size: 12px;
 }
 
-.searchbox-open {
-	width: 100%;
-}
-
-/************** width: 0; here makes the list disappear ************/
-.list-holder,
 .list-view {
+	position: absolute;
+	top: 35px;
+	left: 0;
 	height: 200px;
 	width: 100%;
-}
-
-.list-view {
-	position: absolute;
-	top: 30px;
-	left: 0;
 	overflow: auto;
 	background-color: rgba(255,255,255,0.7);
 	margin: 0;
 	padding: 0;
-	font-size: 1.1em;
+	font-size: 15px;
 }
-
-.list-holder-open {
-	width: 100%;
-}
-
 
 /* ----------------------------------------------------------- */
-/* ---------->>> TOGGLER FOR LIST AND SEARCHBOX <<<----------- */
+/* ----------->>> TOGGLE OF LIST AND SEARCHBOX <<<------------ */
 /* ----------------------------------------------------------- */
 
 .toggler {
@@ -164,9 +87,9 @@ h3 {
 
 #button {
 	position: absolute;
-	top: 7.5px;
-	left: 230px;
-	padding: .3em .5em;
+	top: 10px;
+	left: 235px;
+	padding: .2em .4em;
 	text-decoration: none;
 	color: #006400;
 	border-color: #006400;
@@ -186,9 +109,6 @@ h3 {
 }
 
 
-
-
-
 /*Do I still need this error style ???????
 #error {
 	position: fixed;
@@ -202,17 +122,8 @@ h3 {
 /* ---------------->>> RESPONSIVE DESIGN <<<------------------ */
 /* ----------------------------------------------------------- */
 
-.gm-style-iw {
-	/*position: absolute;
-	z-index: 9999;*/
-}
-
 @media only screen and (max-width: 975px) {
 	/*#list-holder {
 		display: none;
 	}*/
 }
-
-
-
-
