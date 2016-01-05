@@ -20,14 +20,17 @@
 
 	<body>
 		<div id="map" data-bind="click: hideElements"></div>
-		<div id="pageTitle"><p><h3>Burlington, VT</h3><button id="button" class="ui-state-default ui-corner-all">MENU</button></p></div>
+		<div id="pageTitle">
+			<p><h3>Burlington, VT</h3>
+				<button id="button" class="ui-state-default ui-corner-all">MENU</button>
+			</p>
+		</div>
 		<div data-bind="css: navStatus"></div>
 
 		<!-- Searchbox, search icon and list -->
-<!--
 		<div class="container">
 			<form class="searchbox">
-				<input type="search" placeholder="Search for a Park, Pub or Grub ..." name="search" class="searchbox-input" onkeyup="buttonUp();" required data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+				<input type="search" placeholder="Search for a Park, Pub or Grub ..." name="search" class="searchbox-input" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
 				<input type="submit" class="searchbox-submit" value="GO">
 				<span class="searchbox-icon">MENU</span>
 				<div class="list-holder">
@@ -36,7 +39,7 @@
 					</ul>
 				</div>
 			</form>
-		</div>-->
+		</div>
 
 		<!-- Toggle menu on and off -->
 		<div class="toggler">
@@ -45,8 +48,6 @@
 				<p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.</p>
 			</div>
 		</div>
-
-		<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
 
 		<!-- JAVASCRIPT -->
 		<script src="js/knockout-3.4.0.js"></script>

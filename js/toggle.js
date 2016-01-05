@@ -1,38 +1,34 @@
 //Credit: https://jqueryui.com/toggle/
 
-/*
 $(function() {
-    // run the currently selected effect
+    //run the currently selected effect
     function runEffect() {
-        // get effect type from
+        //get effect type from
         var selectedEffect = $("#effectTypes").val();
 
-        // most effect types need no options passed by default
+        //most effect types need no options passed by default
         var options = {};
-        // some effects have required parameters
+        //some effects have required parameters
         if (selectedEffect === "slide") {
             options = {
                 percent: 0
             };
         } else if (selectedEffect === "size") {
-            options = { to: {
-                width: 200,
-                height: 60
-            }};
+            options = {
+                to: {
+                    width: 200,
+                    height: 60
+                }
+            };
         }
-
-        // run the effect
-        $("#effect").toggle( selectedEffect, options, 500 );
+        
+        //run the effect
+        //$("#effect").toggle(selectedEffect, options, 1000);
+        $("#effect").toggle('slide',250);
     };
 
-    // set effect from select menu value
+    //set effect from select menu value
     $("#button").click(function() {
-        runEffect();
+      runEffect();
     });
-});*/
-
-  $(function() {
-    $( "#button" ).click(function() {
-      $( "#effect" ).toggleClass( "newClass", 1000 );
-    });
-  });
+});
