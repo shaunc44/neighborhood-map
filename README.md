@@ -9,6 +9,9 @@ on the map.
 
 INSTRUCTIONS
 ============
+MENU BUTTON:
+	Toggle the menu button to create more space when viewing 
+	location information.
 SEARCH FUNCTION:
 	Enter a word or some text in the search box. The search 
 	function will filter the list based on the text you entered.
