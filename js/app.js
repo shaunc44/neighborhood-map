@@ -210,17 +210,10 @@ var ViewModel = function () {
 						infowindow.setContent(contentString);
 						//infowindow.setZIndex(99999);
 				});
-
-				/*
-				//Closes infowindow upon mouseout
-				google.maps.event.addListener(placeItem.marker, 'mouseout', function() {
-						infowindow.close(map, this);
-				});
-				*/
 			},
 
 			//Foursquare error
-			error: function (e) {
+			error: function(e) {
 				infowindow.setContent('<h5>Foursquare data is unavailable. Please try refreshing later.</h5>');
 				document.getElementById("error").innerHTML = "<h4>Foursquare data is unavailable. Please try refreshing later.</h4>";
 			}
@@ -237,7 +230,7 @@ var ViewModel = function () {
 	});
 
 	//Activate the appropriate marker when the user mouses over a list item
-	self.showInfo = function (placeItem) {
+	self.showInfo = function(placeItem) {
 		google.maps.event.trigger(placeItem.marker, 'click');
 		self.hideElements();
 	};
