@@ -119,7 +119,6 @@ var ViewModel = function () {
 	//Initialize the Infowindow
 	var infowindow = new google.maps.InfoWindow({
 		maxWidth: 200
-		//zIndex: 200
 	});
 
 	//Initialize markers
@@ -138,7 +137,8 @@ var ViewModel = function () {
 			url: 'https://api.foursquare.com/v2/venues/' + placeItem.id() + '?client_id=OS1S4RTHIBE0UB0IZXWOMTNBTKR0OORIGMBHTKOMMLG5DVSY&client_secret=KVDZNXLVF2HSZCWLRXOA0SZ4HCYIW2NCBTYATX2ZYYHRHSFA&v=20130815',
 			dataType: "json",
 
-			success: function (data) {
+		//Display of infowindow
+		}).done(function (data) {
 				var result = data.response.venue;
 
 				var contact = result.hasOwnProperty('contact') ? result.contact : '';
@@ -208,15 +208,12 @@ var ViewModel = function () {
 							placeItem.marker.setAnimation(null);
 						}, 500);
 						infowindow.setContent(contentString);
-						//infowindow.setZIndex(99999);
 				});
-			},
 
-			//Foursquare error
-			error: function(e) {
-				infowindow.setContent('<h5>Foursquare data is unavailable. Please try refreshing later.</h5>');
-				document.getElementById("error").innerHTML = "<h4>Foursquare data is unavailable. Please try refreshing later.</h4>";
-			}
+		//Foursquare infowindow error
+		}).fail(function () {
+			infowindow.setContent('<h5>Foursquare data is unavailable. Please try refreshing later.</h5>');
+			document.getElementById("error").innerHTML = "<h4>Foursquare data is unavailable. Please try refreshing later.</h4>";
 		});
 
 		//Event listener shows error msg on AJAX in the infowindow

@@ -9,10 +9,10 @@ $(function() {
         //run the effect
         //$("#effect").toggle(selectedEffect, options, 1000);
         $(".container").toggle('slide',250);
-    };
+    }
 
     //set effect from select menu value
     $("#button").click(function() {
       runEffect();
     });
-});
+})
