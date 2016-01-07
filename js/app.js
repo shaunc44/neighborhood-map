@@ -210,6 +210,19 @@ var ViewModel = function () {
 						infowindow.setContent(contentString);
 				});
 
+				/*
+				google.maps.event.addListener(placeItem.marker, 'click', 
+					$(function runEffect() {
+						var options = {};
+						$(".container").toggle('slide',250);
+					}
+					$("#button").click(function() {
+						runEffect();
+					});
+				});
+				//});
+				*/
+
 		//Foursquare infowindow error
 		}).fail(function () {
 			infowindow.setContent('<h5>Foursquare data is unavailable. Please try refreshing later.</h5>');
