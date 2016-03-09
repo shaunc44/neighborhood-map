@@ -6,11 +6,9 @@ that isolates venues (locations) when text is entered in the
 search box but also filters the locations (indicated by markers) 
 on the map.
 
+
 -----------------------------------------------------------------
-
-
 #####INSTRUCTIONS
------------------------------------------------------------------
 ######Menu Button:
 	Toggle the menu button to create more space when viewing 
 	location information.
@@ -26,15 +24,15 @@ on the map.
 	infowindow to close the window.
 
 
-#####INSTALLATION
 -----------------------------------------------------------------
+#####INSTALLATION
 Open index.html in your favorite web browser, such as FireFox or 
 Chrome, or you can check out the 
 [Burlington Map](http://shaunc44.github.io/neighborhood-map/) to see 
 the live website. Cheers!
 
 
-#####SUPPORT
 -----------------------------------------------------------------
+#####SUPPORT
 If you're having issues loading the website please email 
 Shaun at shauncox44@gmail.com
