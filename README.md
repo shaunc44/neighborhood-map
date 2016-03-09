@@ -1,4 +1,4 @@
-###NEIGHBORHOOD MAP
+##NEIGHBORHOOD MAP
 ####*UDACITY - FRONT-END NANODEGREE - PROJECT 5*
 In this project I created a neighborhood map of downtown
 Burlington, Vermont. This map includes a search by venue function
@@ -26,7 +26,7 @@ on the map.
 
 -----------------------------------------------------------------
 #####INSTALLATION
-Open index.html in your favorite web browser, such as FireFox or 
+Open index.html in your favorite web browser, such as Firefox or 
 Chrome, or you can check out the 
 [Burlington Map](http://shaunc44.github.io/neighborhood-map/) to see 
 the live website. Cheers!
