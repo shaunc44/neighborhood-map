@@ -5,7 +5,7 @@ Burlington, Vermont. This map includes a search by venue function
 that isolates venues (locations) when text is entered in the 
 search box but also filters the locations (indicated by markers) 
 on the map.
-=================================================================
+-----------------------------------------------------------------
 
 
 #####INSTRUCTIONS
