@@ -31,6 +31,18 @@ var locations = [
 		id: "52508dcd11d28b42e127ab1e"
 	},
 	{
+		name: "Lake Champlain Chocolates",
+		lat: 44.4586590,
+		lng: -73.2112440,
+		id: "4b6b070af964a5209aed2be3"
+	},
+	{
+		name: "Penny Cluse Café",
+		lat: 44.4737720,
+		lng: -73.2107190,
+		id: "4a6ca0a2f964a5200cd11fe3"
+	},
+	{
 		name: "Red Onion",
 		lat: 44.4764259,
 		lng: -73.212299,
@@ -79,10 +91,12 @@ function initMap() {
 	ko.applyBindings(new ViewModel());
 }
 
+
 //Alert user when google maps is not working
 function googleError() {
 	document.getElementById('map').innerHTML = "<h2>Google Maps is not loading. Please refresh the page later.</h2>";
 }
+
 
 //Place constructor
 var Place = function (data) {
