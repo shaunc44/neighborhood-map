@@ -7,6 +7,18 @@ var locations = [
 		id: "4af3a181f964a520fcee21e3"
 	},
 	{
+		name: "Ben & Jerry's",
+		lat: 44.4794430,
+		lng: -73.2125320,
+		id: "4ab3e8f3f964a520126f20e3"
+	},
+	{
+		name: "Burton Snowboards Flagship Store",
+		lat: 44.4510040,
+		lng: -73.2142670,
+		id: "4b3a1810f964a520fd6025e3"
+	},
+	{
 		name: "Church Street Marketplace",
 		lat: 44.4781653,
 		lng: -73.2126255,
