@@ -7,6 +7,12 @@ var locations = [
 		id: "4af3a181f964a520fcee21e3"
 	},
 	{
+		name: "Battery Park",
+		lat: 44.4813020,
+		lng: -73.2198930,
+		id: "4b48eb94f964a5206a5d26e3"
+	},
+	{
 		name: "Ben & Jerry's",
 		lat: 44.4794430,
 		lng: -73.2125320,
@@ -29,6 +35,12 @@ var locations = [
 		lat: 44.4706803,
 		lng: -73.214242,
 		id: "533f48d3498eb76534dffbb2"
+	},
+	{
+		name: "Feldman's Bagels",
+		lat: 44.4610800,
+		lng: -73.2139810,
+		id: "5181287b498e5c6fcf5d46d2"
 	},
 	{
 		name: "Flynn Center for the Performing Arts",
