@@ -21,12 +21,10 @@ on the map.
 
 -----------------------------------------------------------------
 #### INSTALLATION  
-Open index.html in your favorite web browser, such as Firefox or 
-Chrome, or you can check out the 
-[Burlington Map](http://shaunc44.github.io/neighborhood-map/) to see 
-the live website. Cheers!  
+Open index.html in your favorite web browser, such as Firefox or Chrome, or you can check out the website [here](http://shaunc44.github.io/neighborhood-map/)  
+Cheers!  
 
 
 -----------------------------------------------------------------
 #### SUPPORT  
-If you're having issues loading the website please email Shaun at 'shauncox44 AT gmail.com'  
+If you're having issues loading the website please email Shaun at #shauncox44* AT *gmail.com*  
