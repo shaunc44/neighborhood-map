@@ -27,4 +27,4 @@ Cheers!
 
 -----------------------------------------------------------------
 #### SUPPORT  
-If you're having issues loading the website please email Shaun at #shauncox44* AT *gmail.com*  
+If you're having issues loading the website please email Shaun at *shauncox44* AT *gmail.com*  
